@@ -12,9 +12,11 @@ pipeline {
       }
     }
 
-    stage('Test') {
+    stage('Whoami') {
       steps {
-        sleep 5
+        sh '''w
+whoami
+w'''
       }
     }
 
