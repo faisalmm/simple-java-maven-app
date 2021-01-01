@@ -1,5 +1,10 @@
 pipeline {
-  agent none
+  agent {
+    docker {
+      image 'busybox'
+    }
+
+  }
   stages {
     stage('CI') {
       steps {
