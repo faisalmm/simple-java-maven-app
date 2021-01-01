@@ -14,7 +14,9 @@ pipeline {
 
     stage('run_cmd') {
       steps {
-        sh '''whoami
+        sh '''#!/bin/bash
+
+whoami
 '''
       }
     }
