@@ -7,11 +7,12 @@ pipeline {
       }
     }
 
-    stage('Whoami') {
+    stage('run_cmd') {
       steps {
-        sh '''w
+        sh '''#!/bin/bash
+
 whoami
-w'''
+'''
       }
     }
 
